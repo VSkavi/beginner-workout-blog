@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beginner Bodyweight Workout at Home: No Equipment</title>
+<meta name="description" content="A simple bodyweight workout for complete beginners — no equipment, 20 minutes, with modifications for every exercise at home. Start today.">
+<link rel="canonical" href="https://example.com/beginner-bodyweight-workout-at-home">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beginner Bodyweight Workout at Home: No Equipment">
+<meta property="og:description" content="A simple bodyweight workout for complete beginners — no equipment, 20 minutes, with modifications for every exercise at home. Start today.">
+<meta property="og:url" content="https://example.com/beginner-bodyweight-workout-at-home">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the most common beginner mistakes — and how do I fix them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The biggest ones are rushing through reps, holding your breath, and skipping the warm-up or cooldown. Slow down and focus on control rather than speed. Breathe out on the effort part of each move, like standing up from a squat. And don't skip the 3-minute warm-up — it's short on purpose, but it matters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do next after this workout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once this routine feels manageable, move on to a full weekly schedule so you know exactly which days to train. When you're ready to add light resistance, an equipment guide can help you choose what's actually worth buying first."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will this beginner workout help me lose weight?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bodyweight workouts like this one burn calories and, more importantly, build the habit of moving consistently — which matters more for weight loss than any single session. Pair it with a realistic eating pattern and enough sleep for the best results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this routine include an abs workout at home without equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Dead Bug move in the main circuit targets your core directly, and moves like the Incline Push-up and Glute Bridge also engage your abs to keep your body stable."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --bg:#F2F6F2;
+    --surface:#FFFFFF;
+    --surface-alt:#E7EFE9;
+    --ink:#16241F;
+    --ink-soft:#4B5A54;
+    --coral:#FF6B4A;
+    --coral-ink:#7A2B18;
+    --teal:#1F6F5C;
+    --teal-deep:#123F34;
+    --gold:#F4A93B;
+    --line:#D9E3DD;
+    --radius:18px;
+    --max:800px;
+    --shadow: 0 1px 2px rgba(22,36,31,.04), 0 8px 24px rgba(22,36,31,.06);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    line-height:1.6;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,.display{
+    font-family:'Space Grotesk',system-ui,sans-serif;
+    font-weight:700;
+    color:var(--ink);
+    line-height:1.15;
+    letter-spacing:-0.01em;
+  }
+
+  a{color:var(--teal);}
+  a:focus-visible, button:focus-visible, summary:focus-visible, .tgl:focus-visible{
+    outline:3px solid var(--coral);
+    outline-offset:2px;
+    border-radius:6px;
+  }
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 20px;}
+
+  /* ---------- Header ---------- */
+  .site-header{
+    padding:18px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .eyebrow-nav{
+    display:flex; align-items:center; gap:8px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+  .eyebrow-nav .dot{width:6px;height:6px;border-radius:50%;background:var(--coral);flex:none;}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:44px 0 36px;}
+  .hero .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--teal); font-weight:700; margin-bottom:14px;
+  }
+  .hero h1{
+    font-size:clamp(30px, 6vw, 46px);
+    margin:0 0 16px;
+  }
+  .hero p.lede{
+    font-size:clamp(16px, 2.6vw, 19px);
+    color:var(--ink-soft);
+    max-width:56ch;
+    margin:0 0 26px;
+  }
+
+  .checklist{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:20px 22px;
+    box-shadow:var(--shadow);
+    margin-bottom:26px;
+  }
+  .checklist h2.mini{
+    font-family:'Space Grotesk';
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    color:var(--ink-soft);
+    margin:0 0 12px;
+    font-weight:600;
+  }
+  .checklist ul{list-style:none; margin:0; padding:0; display:grid; gap:10px;}
+  .checklist li{
+    display:flex; align-items:center; gap:12px;
+    font-size:15px; color:var(--ink);
+    opacity:0; transform:translateY(6px);
+    animation:rise .5s ease forwards;
+  }
+  .checklist li:nth-child(1){animation-delay:.1s;}
+  .checklist li:nth-child(2){animation-delay:.35s;}
+  .checklist li:nth-child(3){animation-delay:.6s;}
+  @keyframes rise{to{opacity:1; transform:translateY(0);}}
+  .checklist .box{
+    width:22px; height:22px; flex:none; border-radius:6px;
+    border:2px solid var(--teal); position:relative;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .checklist .box svg{width:13px;height:13px; opacity:0; transform:scale(.5); transition:.25s ease;}
+  .checklist li{animation-fill-mode:forwards;}
+  .checklist li .box svg{animation:pop .3s ease forwards; animation-delay:inherit;}
+  @keyframes pop{to{opacity:1; transform:scale(1);}}
+  .checklist li:nth-child(1) .box svg{animation-delay:.5s;}
+  .checklist li:nth-child(2) .box svg{animation-delay:.75s;}
+  .checklist li:nth-child(3) .box svg{animation-delay:1s;}
+
+  .cta-row{display:flex; flex-wrap:wrap; gap:12px;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:'Space Grotesk'; font-weight:600; font-size:15px;
+    padding:13px 22px; border-radius:999px;
+    text-decoration:none; cursor:pointer; border:none;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-primary{background:var(--coral); color:#fff; box-shadow:0 6px 18px rgba(255,107,74,.35);}
+  .btn-ghost{background:transparent; color:var(--teal); border:1.5px solid var(--teal);}
+
+  /* stat row */
+  .stat-row{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:14px;
+    margin:34px 0 6px;
+  }
+  .stat{
+    background:var(--surface-alt); border-radius:14px; padding:16px 14px;
+  }
+  .stat b{display:block; font-family:'Space Grotesk'; font-size:clamp(18px,4vw,24px);}
+  .stat span{font-size:13px; color:var(--ink-soft);}
+
+  /* ---------- Sections ---------- */
+  section{padding:40px 0; border-top:1px solid var(--line);}
+  section h2{font-size:clamp(22px,4vw,28px); margin:0 0 14px;}
+  section > .wrap > p{color:var(--ink-soft); max-width:64ch;}
+
+  /* ---------- Timer ---------- */
+  .timer-card{
+    background:var(--teal-deep); color:#fff;
+    border-radius:var(--radius); padding:24px;
+    margin:22px 0 30px;
+    display:grid; gap:18px;
+  }
+  .timer-top{display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap;}
+  .timer-phase{font-family:'JetBrains Mono'; font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:#BFE3D8;}
+  .timer-clock{font-family:'JetBrains Mono'; font-weight:700; font-size:clamp(38px,10vw,56px); line-height:1;}
+  .timer-bar{height:8px; border-radius:99px; background:rgba(255,255,255,.15); overflow:hidden;}
+  .timer-bar-fill{height:100%; width:0%; background:var(--coral); transition:width .3s linear;}
+  .timer-phases{display:flex; gap:8px; flex-wrap:wrap; font-family:'JetBrains Mono'; font-size:12px;}
+  .timer-phases span{padding:5px 10px; border-radius:99px; background:rgba(255,255,255,.08); color:#BFE3D8;}
+  .timer-phases span.active{background:var(--coral); color:#fff;}
+  .timer-controls{display:flex; gap:10px;}
+  .timer-controls button{
+    font-family:'Space Grotesk'; font-weight:600; font-size:14px;
+    padding:10px 18px; border-radius:99px; border:1.5px solid rgba(255,255,255,.35);
+    background:transparent; color:#fff; cursor:pointer;
+  }
+  .timer-controls button.primary{background:#fff; color:var(--teal-deep); border-color:#fff;}
+
+  h3.subhead{
+    font-size:18px; margin:28px 0 6px; display:flex; align-items:center; gap:10px;
+  }
+  h3.subhead .tag{
+    font-family:'JetBrains Mono'; font-size:12px; font-weight:500;
+    background:var(--surface-alt); color:var(--teal-deep);
+    padding:3px 9px; border-radius:99px;
+  }
+  ul.simple-list{margin:8px 0 0; padding:0; list-style:none; display:grid; gap:10px;}
+  ul.simple-list li{
+    background:var(--surface); border:1px solid var(--line); border-radius:12px;
+    padding:12px 14px; font-size:15px; display:flex; justify-content:space-between; gap:10px; align-items:center;
+  }
+  ul.simple-list li .dur{font-family:'JetBrains Mono'; font-size:12px; color:var(--ink-soft); flex:none;}
+
+  /* ---------- Exercise cards (signature) ---------- */
+  .circuit-note{font-size:14px; color:var(--ink-soft); margin:10px 0 18px;}
+  .ex-grid{display:grid; gap:14px;}
+  .ex-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:18px 20px; box-shadow:var(--shadow);
+  }
+  .ex-head{display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:8px;}
+  .ex-name{font-family:'Space Grotesk'; font-weight:600; font-size:17px;}
+  .ex-dur{font-family:'JetBrains Mono'; font-size:12px; color:var(--ink-soft); white-space:nowrap; margin-top:4px;}
+  .ex-desc{color:var(--ink-soft); font-size:14.5px; margin:0;}
+  .ex-desc .easier-label{
+    display:inline-block; font-family:'JetBrains Mono'; font-size:11px; font-weight:700;
+    color:var(--coral-ink); background:#FFE7DF; padding:2px 8px; border-radius:99px; margin-right:8px; text-transform:uppercase;
+  }
+  .tgl{
+    margin-top:12px; font-family:'Space Grotesk'; font-weight:600; font-size:13px;
+    background:var(--surface-alt); color:var(--teal-deep); border:none; border-radius:99px;
+    padding:8px 14px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;
+  }
+  .ex-card[data-state="easier"]{border-color:var(--gold); background:#FFFBF2;}
+  .ex-card[data-state="easier"] .tgl{background:var(--gold); color:var(--coral-ink);}
+
+  /* ---------- Link callout ---------- */
+  .callout{
+    background:var(--surface); border:1px dashed var(--teal); border-radius:var(--radius);
+    padding:18px 20px; display:flex; justify-content:space-between; gap:16px; align-items:center;
+    flex-wrap:wrap; margin-top:16px;
+  }
+  .callout p{margin:0; font-size:14.5px; color:var(--ink-soft); max-width:46ch;}
+  .callout a.arrow{font-family:'Space Grotesk'; font-weight:600; text-decoration:none; white-space:nowrap;}
+
+  /* ---------- FAQ ---------- */
+  details{
+    background:var(--surface); border:1px solid var(--line); border-radius:14px;
+    padding:4px 18px; margin-bottom:10px;
+  }
+  summary{
+    cursor:pointer; padding:14px 0; font-family:'Space Grotesk'; font-weight:600; font-size:16px;
+    list-style:none; display:flex; justify-content:space-between; gap:12px; align-items:center;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary .plus{font-size:20px; color:var(--teal); transition:transform .2s ease; flex:none;}
+  details[open] summary .plus{transform:rotate(45deg);}
+  details p{color:var(--ink-soft); margin:0 0 16px; font-size:14.5px;}
+
+  footer{padding:30px 0 50px; text-align:center;}
+  footer p{font-size:13px; color:var(--ink-soft); max-width:52ch; margin:0 auto;}
+
+  @media (min-width:720px){
+    .hero{padding:64px 0 48px;}
+    .cta-row{margin-top:4px;}
+    .ex-grid{grid-template-columns:1fr 1fr;}
+    .timer-top{align-items:center;}
+    ul.simple-list{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap eyebrow-nav">
+    <span class="dot"></span> Home Fitness for Beginners
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <div class="hero wrap">
+    <div class="eyebrow">Beginner Fitness · No Equipment</div>
+    <h1>Beginner Bodyweight Workout at Home: No Equipment Needed</h1>
+    <p class="lede">A 20-minute routine built for people who have genuinely never worked out before — no gym vocabulary assumed, and an easier version of every single move.</p>
+
+    <div class="checklist">
+      <h2 class="mini">What you actually need</h2>
+      <ul>
+        <li><span class="box"><svg viewBox="0 0 16 16" fill="none"><path d="M2 8.5L6 12.5L14 3.5" stroke="#1F6F5C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span> About 2m × 2m of floor space</li>
+        <li><span class="box"><svg viewBox="0 0 16 16" fill="none"><path d="M2 8.5L6 12.5L14 3.5" stroke="#1F6F5C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span> 20 minutes</li>
+        <li><span class="box"><svg viewBox="0 0 16 16" fill="none"><path d="M2 8.5L6 12.5L14 3.5" stroke="#1F6F5C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span> That's genuinely it</li>
+      </ul>
+    </div>
+
+    <div class="cta-row">
+      <a href="#routine" class="btn btn-primary">Jump to the routine ↓</a>
+      <a href="#faq" class="btn btn-ghost">Common mistakes</a>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat"><b>0</b><span>Equipment required</span></div>
+      <div class="stat"><b>20 min</b><span>Start to finish</span></div>
+      <div class="stat"><b>Every move</b><span>Has an easier version</span></div>
+    </div>
+    
+  <!-- WHY IT WORKS -->
+  <section id="why">
+    <div class="wrap">
+      <h2>Why Bodyweight Training Works for Complete Beginners</h2>
+      <p>You don't need machines to get your body used to moving with purpose. Squats, push-ups, and bridges use your own body weight as resistance, which means the difficulty scales with you — not the other way around. There's also nothing to set up and nothing to put away, so the only decision left is whether you start today or tomorrow.</p>
+      <p>Most beginner guides skip straight to the workout and leave you guessing what a "circuit" or "set" even means. This one doesn't assume you know any of that — every term gets explained the first time it's used, right where you need it.</p>
+      <img src="images/Bodyweight Training for Complete Beginners.jpg" alt="a woman doing a bodyweight workout at home"
+        style="width:100%; max-width:800px; margin-top:26px; ">
+    </div>
+  </section>
+
+  <!-- WHAT YOU NEED -->
+  <section id="need">
+    <div class="wrap">
+      <h2>What You Need Before You Start</h2>
+      <p>Comfortable clothes you can move in, a small clear patch of floor, and a glass of water nearby. A yoga mat or folded towel is nice for the floor moves but not required — a rug or carpet works fine. That's the complete list.</p>
+    </div>
+  </section>
+
+  <!-- ROUTINE -->
+  <section id="routine">
+    <div class="wrap">
+      <h2>The 20-Minute Beginner Routine</h2>
+      <p>Three short phases: a warm-up to wake your body up, a main circuit that does the real work, and a cooldown to bring your heart rate back down. Use the timer below to move through all three, or just read the routine and go at your own pace.</p>
+
+      <div class="timer-card">
+        <div class="timer-top">
+          <div>
+            <div class="timer-phase" id="phaseLabel">Ready when you are</div>
+            <div class="timer-clock" id="clock">03:00</div>
+          </div>
+          <div class="timer-phases">
+            <span id="tag-warmup" class="active">Warm-up · 3m</span>
+            <span id="tag-circuit">Circuit · 14m</span>
+            <span id="tag-cooldown">Cooldown · 3m</span>
+          </div>
+        </div>
+        <div class="timer-bar"><div class="timer-bar-fill" id="timerFill"></div></div>
+        <div class="timer-controls">
+          <button class="primary" id="timerStart">Start</button>
+          <button id="timerPause">Pause</button>
+          <button id="timerReset">Reset</button>
+        </div>
+      </div>
+
+      <h3 class="subhead">Warm-up <span class="tag">3 min</span></h3>
+      <ul class="simple-list">
+        <li>Marching in place <span class="dur">45 sec</span></li>
+        <li>Arm circles, both directions <span class="dur">45 sec</span></li>
+        <li>Gentle torso twists <span class="dur">45 sec</span></li>
+        <li>Ankle rolls, each side <span class="dur">45 sec</span></li>
+      </ul>
+
+      <h3 class="subhead">Main circuit <span class="tag">14 min</span></h3>
+      <p class="circuit-note">Do the 5 moves below in order — about 40 seconds of work, 20 seconds of rest, then the next move. Rest a full minute after each round and repeat for 3 rounds if you can. 2 rounds is completely fine for your first time. Every card below has a button to switch to an easier version — use it any time, mid-workout is fine too.</p>
+
+      <div class="ex-grid">
+        <article class="ex-card" data-state="standard">
+          <img src="images/squats.png" alt="a women doing bodyweight squat" style="width:100%; max-width:330px; margin-bottom:12px; border-radius:12px;">
+          <div class="ex-head"><span class="ex-name">Bodyweight Squat</span><span class="ex-dur">40 sec</span></div>
+          <p class="ex-desc" data-standard="Feet shoulder-width apart, sit your hips back like you're lowering onto a chair, then stand back up. Keep your chest lifted." data-easier="<span class='easier-label'>Easier</span> Chair-Assisted Squat — stand in front of a chair, lower until you lightly touch the seat, then stand back up. The chair is your safety net.">Feet shoulder-width apart, sit your hips back like you're lowering onto a chair, then stand back up. Keep your chest lifted.</p>
+          <button class="tgl" type="button">Make it easier</button>
+        </article>
+
+        <article class="ex-card" data-state="standard">
+          <img src="images/inclined push ups.png" alt="a women doing incline push up" style="width:100%; max-width:330px; margin-bottom:12px; border-radius:12px;">
+          <div class="ex-head"><span class="ex-name">Incline Push-up</span><span class="ex-dur">40 sec</span></div>
+          <p class="ex-desc" data-standard="Hands on a sturdy table or countertop, walk your feet back so your body forms a straight line. Bend your elbows to lower your chest toward the surface, then push back up." data-easier="<span class='easier-label'>Easier</span> Wall Push-up — same movement, hands on a wall instead of a table. The more upright you stand, the easier it is.">Hands on a sturdy table or countertop, walk your feet back so your body forms a straight line. Bend your elbows to lower your chest toward the surface, then push back up.</p>
+          <button class="tgl" type="button">Make it easier</button>
+        </article>
+
+        <article class="ex-card" data-state="standard">
+          <img src="images/standing marching.png" alt="a women doing standing marching" style="width:100%; max-width:330px; margin-bottom:12px; border-radius:12px;">
+          <div class="ex-head"><span class="ex-name">Standing Marching</span><span class="ex-dur">40 sec</span></div>
+          <p class="ex-desc" data-standard="Lift your knees toward waist height, one at a time, at a steady pace — like a slow jog on the spot." data-easier="<span class='easier-label'>Easier</span> Slow March — lift your knees just a few inches, at your own pace. Hold a wall or counter for balance if you need it.">Lift your knees toward waist height, one at a time, at a steady pace — like a slow jog on the spot.</p>
+          <button class="tgl" type="button">Make it easier</button>
+        </article>
+
+        <article class="ex-card" data-state="standard">
+          <img src="images/glute bridge.png" alt="a women doing glute bridge" style="width:100%; max-width:330px; margin-bottom:12px; border-radius:12px;">
+          <div class="ex-head"><span class="ex-name">Glute Bridge</span><span class="ex-dur">40 sec</span></div>
+          <p class="ex-desc" data-standard="Lie on your back, knees bent, feet flat on the floor. Squeeze your glutes and lift your hips into a straight line from shoulders to knees, then lower slowly." data-easier="<span class='easier-label'>Easier</span> Small-Range Bridge — lift just a little way off the floor, focusing on the squeeze rather than the height.">Lie on your back, knees bent, feet flat on the floor. Squeeze your glutes and lift your hips into a straight line from shoulders to knees, then lower slowly.</p>
+          <button class="tgl" type="button">Make it easier</button>
+        </article>
+
+        <article class="ex-card" data-state="standard">
+          <img src="images/dead bug.png" alt="a women doing dead bug" style="width:100%; max-width:330px; margin-bottom:12px; border-radius:12px;">
+          <div class="ex-head"><span class="ex-name">Dead Bug <span style="font-weight:400;color:var(--ink-soft);font-size:12px;">(core)</span></span><span class="ex-dur">40 sec</span></div>
+          <p class="ex-desc" data-standard="Lie on your back, arms reaching up, knees bent at 90°. Slowly lower one arm and the opposite leg toward the floor, then return. Alternate sides." data-easier="<span class='easier-label'>Easier</span> Modified Dead Bug — keep both feet on the floor. Just lower one arm at a time overhead, then return.">Lie on your back, arms reaching up, knees bent at 90°. Slowly lower one arm and the opposite leg toward the floor, then return. Alternate sides.</p>
+          <button class="tgl" type="button">Make it easier</button>
+        </article>
+      </div>
+
+      <h3 class="subhead">Cooldown <span class="tag">3 min</span></h3>
+      <ul class="simple-list">
+        <li>Standing quad stretch, each side <span class="dur">30 sec</span></li>
+        <li>Hamstring stretch, each side <span class="dur">30 sec</span></li>
+        <li>Child's pose or seated forward fold <span class="dur">60 sec</span></li>
+        <li>Slow deep breaths <span class="dur">30 sec</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- HOW OFTEN -->
+  <section id="how-often">
+    <div class="wrap">
+      <h2>How Often Should You Do This Workout?</h2>
+      <p>Twice a week is a strong, sustainable starting point — it gives your body real rest between sessions while you build the habit. Once two sessions a week feels easy, that's your sign to add a third.</p>
+      <div class="callout">
+        <p>Want the full week mapped out, including rest days and when to add a third session?</p>
+        <a class="arrow" href="beginner-workout-schedule-for-home.html">Beginner Workout Schedule for Home →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT NEXT -->
+  <section id="next">
+    <div class="wrap">
+      <h2>Need Equipment?</h2>
+      <p>Repeat this exact routine for the next 1–2 weeks before changing anything. Once it starts to feel easy rather than challenging, that's when it's worth adding light resistance.</p>
+      <div class="callout">
+        <p>Thinking about adding a resistance band or a light pair of dumbbells?</p>
+        <a class="arrow" href="best-home-workout-equipment-beginners-india.html">Best Home Workout Equipment for Beginners in India →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <h2>Frequently Asked Questions</h2>
+
+      <details open>
+        <summary>What are the most common beginner mistakes — and how do I fix them? <span class="plus">+</span></summary>
+        <p>The biggest ones are rushing through reps, holding your breath, and skipping the warm-up or cooldown. Slow down and focus on control rather than speed. Breathe out on the effort part of each move, like standing up from a squat. And don't skip the 3-minute warm-up — it's short on purpose, but it matters.</p>
+      </details>
+
+      <details>
+        <summary>What should I do next after this workout? <span class="plus">+</span></summary>
+        <p>Once this routine feels manageable, move on to a full weekly schedule so you know exactly which days to train. When you're ready to add light resistance, an equipment guide can help you choose what's actually worth buying first.</p>
+      </details>
+
+      <details>
+        <summary>Will this beginner workout help me lose weight? <span class="plus">+</span></summary>
+        <p>Bodyweight workouts like this one burn calories and, more importantly, build the habit of moving consistently — which matters more for weight loss than any single session. Pair it with a realistic eating pattern and enough sleep for the best results.</p>
+      </details>
+
+      <details>
+        <summary>Does this routine include an abs workout at home without equipment? <span class="plus">+</span></summary>
+        <p>Yes. The Dead Bug move in the main circuit targets your core directly, and moves like the Incline Push-up and Glute Bridge also engage your abs to keep your body stable.</p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>General fitness guidance, not medical advice. Check with a doctor before starting a new exercise routine if you have any health conditions or concerns.</p>
+    <br><p><a href="#top" style="text-decoration: none; border: 1px solid var(--coral); border-radius: 5px; padding: 5px 10px; background-color: var(--coral); color: var(--bg);">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  // Exercise modification toggles
+  document.querySelectorAll('.ex-card').forEach(function(card){
+    var btn = card.querySelector('.tgl');
+    var desc = card.querySelector('.ex-desc');
+    btn.addEventListener('click', function(){
+      var isEasier = card.getAttribute('data-state') === 'easier';
+      if(isEasier){
+        card.setAttribute('data-state','standard');
+        desc.textContent = desc.getAttribute('data-standard');
+        btn.textContent = 'Make it easier';
+        btn.setAttribute('aria-pressed','false');
+      } else {
+        card.setAttribute('data-state','easier');
+        desc.innerHTML = desc.getAttribute('data-easier');
+        btn.textContent = 'Back to standard';
+        btn.setAttribute('aria-pressed','true');
+      }
+    });
+  });
+
+  // Routine timer: Warm-up (3m) -> Circuit (14m) -> Cooldown (3m)
+  (function(){
+    var phases = [
+      { key:'warmup',   label:'Warm-up',   seconds:3*60,  tag:'tag-warmup'   },
+      { key:'circuit',  label:'Main circuit', seconds:14*60, tag:'tag-circuit'  },
+      { key:'cooldown', label:'Cooldown',  seconds:3*60,  tag:'tag-cooldown' }
+    ];
+    var phaseIndex = 0;
+    var remaining = phases[0].seconds;
+    var running = false;
+    var intervalId = null;
+
+    var clock = document.getElementById('clock');
+    var phaseLabel = document.getElementById('phaseLabel');
+    var fill = document.getElementById('timerFill');
+    var startBtn = document.getElementById('timerStart');
+    var pauseBtn = document.getElementById('timerPause');
+    var resetBtn = document.getElementById('timerReset');
+
+    function fmt(s){
+      var m = Math.floor(s/60), sec = s%60;
+      return (m<10?'0':'')+m+':'+(sec<10?'0':'')+sec;
+    }
+
+    function setActiveTag(){
+      phases.forEach(function(p){ document.getElementById(p.tag).classList.remove('active'); });
+      document.getElementById(phases[phaseIndex].tag).classList.add('active');
+    }
+
+    function render(){
+      clock.textContent = fmt(remaining);
+      var total = phases[phaseIndex].seconds;
+      fill.style.width = (100 - (remaining/total)*100) + '%';
+      phaseLabel.textContent = running ? phases[phaseIndex].label + ' — go' : phases[phaseIndex].label + ' — paused';
+    }
+
+    function tick(){
+      remaining--;
+      if(remaining < 0){
+        if(phaseIndex < phases.length - 1){
+          phaseIndex++;
+          remaining = phases[phaseIndex].seconds;
+          setActiveTag();
+        } else {
+          clearInterval(intervalId);
+          running = false;
+          phaseLabel.textContent = 'Routine complete — nice work';
+          clock.textContent = '00:00';
+          fill.style.width = '100%';
+          return;
+        }
+      }
+      render();
+    }
+
+    startBtn.addEventListener('click', function(){
+      if(running) return;
+      running = true;
+      render();
+      intervalId = setInterval(tick, 1000);
+    });
+    pauseBtn.addEventListener('click', function(){
+      running = false;
+      clearInterval(intervalId);
+      render();
+    });
+    resetBtn.addEventListener('click', function(){
+      running = false;
+      clearInterval(intervalId);
+      phaseIndex = 0;
+      remaining = phases[0].seconds;
+      setActiveTag();
+      fill.style.width = '0%';
+      phaseLabel.textContent = 'Ready when you are';
+      render();
+    });
+
+    render();
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beginner Workout Schedule for Home: A Realistic Weekly Plan</title>
+<meta name="description" content="How many days a week beginners should train, how long each session should be, and a sample weekly schedule you can actually stick to.">
+<link rel="canonical" href="https://example.com/beginner-workout-schedule-for-home">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beginner Workout Schedule for Home: A Realistic Weekly Plan">
+<meta property="og:description" content="How many days a week beginners should train, how long each session should be, and a sample weekly schedule you can actually stick to.">
+<meta property="og:url" content="https://example.com/beginner-workout-schedule-for-home">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#F2F6F2;
+    --surface:#FFFFFF;
+    --surface-alt:#E7EFE9;
+    --ink:#16241F;
+    --ink-soft:#4B5A54;
+    --coral:#FF6B4A;
+    --coral-ink:#7A2B18;
+    --teal:#1F6F5C;
+    --teal-deep:#123F34;
+    --gold:#F4A93B;
+    --line:#D9E3DD;
+    --radius:18px;
+    --max:800px;
+    --shadow: 0 1px 2px rgba(22,36,31,.04), 0 8px 24px rgba(22,36,31,.06);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    line-height:1.6;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,.display{
+    font-family:'Space Grotesk',system-ui,sans-serif;
+    font-weight:700;
+    color:var(--ink);
+    line-height:1.15;
+    letter-spacing:-0.01em;
+  }
+
+  a{color:var(--teal);}
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:3px solid var(--coral);
+    outline-offset:2px;
+    border-radius:6px;
+  }
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 20px;}
+
+  /* ---------- Header ---------- */
+  .site-header{padding:18px 0; border-bottom:1px solid var(--line);}
+  .eyebrow-nav{
+    display:flex; align-items:center; gap:8px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+  .eyebrow-nav .dot{width:6px;height:6px;border-radius:50%;background:var(--coral);flex:none;}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:44px 0 36px;}
+  .hero .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--teal); font-weight:700; margin-bottom:14px;
+  }
+  .hero h1{font-size:clamp(28px, 5.4vw, 42px); margin:0 0 16px;}
+  .hero p.lede{font-size:clamp(16px, 2.6vw, 19px); color:var(--ink-soft); max-width:58ch; margin:0 0 26px;}
+
+  .checklist{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:20px 22px; box-shadow:var(--shadow); margin-bottom:26px;
+  }
+  .checklist h2.mini{
+    font-family:'Space Grotesk'; font-size:14px; text-transform:uppercase; letter-spacing:.04em;
+    color:var(--ink-soft); margin:0 0 12px; font-weight:600;
+  }
+  .checklist ul{list-style:none; margin:0; padding:0; display:grid; gap:10px;}
+  .checklist li{
+    display:flex; align-items:center; gap:12px; font-size:15px; color:var(--ink);
+    opacity:0; transform:translateY(6px); animation:rise .5s ease forwards;
+  }
+  .checklist li:nth-child(1){animation-delay:.1s;}
+  .checklist li:nth-child(2){animation-delay:.35s;}
+  .checklist li:nth-child(3){animation-delay:.6s;}
+  @keyframes rise{to{opacity:1; transform:translateY(0);}}
+  .checklist .box{
+    width:22px; height:22px; flex:none; border-radius:6px; border:2px solid var(--teal);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .checklist .box svg{opacity:0; transform:scale(.5); animation:pop .3s ease forwards;}
+  @keyframes pop{to{opacity:1; transform:scale(1);}}
+  .checklist li:nth-child(1) .box svg{animation-delay:.5s;}
+  .checklist li:nth-child(2) .box svg{animation-delay:.75s;}
+  .checklist li:nth-child(3) .box svg{animation-delay:1s;}
+
+  .cta-row{display:flex; flex-wrap:wrap; gap:12px;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:'Space Grotesk'; font-weight:600; font-size:15px;
+    padding:13px 22px; border-radius:999px; text-decoration:none; cursor:pointer; border:none;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-primary{background:var(--coral); color:#fff; box-shadow:0 6px 18px rgba(255,107,74,.35);}
+  .btn-ghost{background:transparent; color:var(--teal); border:1.5px solid var(--teal);}
+
+  .stat-row{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:34px 0 6px;}
+  .stat{background:var(--surface-alt); border-radius:14px; padding:16px 14px;}
+  .stat b{display:block; font-family:'Space Grotesk'; font-size:clamp(18px,4vw,24px);}
+  .stat span{font-size:13px; color:var(--ink-soft);}
+
+  /* ---------- Sections ---------- */
+  section{padding:40px 0; border-top:1px solid var(--line);}
+  section h2{font-size:clamp(22px,4vw,28px); margin:0 0 14px;}
+  section > .wrap > p{color:var(--ink-soft); max-width:64ch;}
+
+  /* ---------- Plan toggle + week grid (signature) ---------- */
+  .plan-toggle{display:flex; gap:10px; margin:20px 0 18px; flex-wrap:wrap;}
+  .plan-btn{
+    font-family:'Space Grotesk'; font-weight:600; font-size:14px;
+    padding:10px 18px; border-radius:99px; border:1.5px solid var(--teal);
+    background:transparent; color:var(--teal); cursor:pointer;
+  }
+  .plan-btn.active{background:var(--teal); color:#fff;}
+
+  .week-grid{
+    display:grid; grid-template-columns:repeat(7,1fr); gap:8px;
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:16px; box-shadow:var(--shadow);
+  }
+  .day-cell{
+    text-align:center; padding:14px 4px; border-radius:12px; background:var(--surface-alt);
+    transition:background .2s ease, color .2s ease;
+  }
+  .day-cell .day-name{
+    display:block; font-family:'JetBrains Mono'; font-size:11px; text-transform:uppercase;
+    letter-spacing:.04em; color:var(--ink-soft); margin-bottom:8px;
+  }
+  .day-cell .day-status{display:block; font-family:'Space Grotesk'; font-weight:600; font-size:12.5px; color:var(--ink-soft);}
+  .day-cell.is-workout{background:var(--coral);}
+  .day-cell.is-workout .day-name{color:rgba(255,255,255,.85);}
+  .day-cell.is-workout .day-status{color:#fff;}
+
+  .plan-summary{
+    display:flex; gap:18px; flex-wrap:wrap; margin-top:14px;
+    font-family:'JetBrains Mono'; font-size:13px; color:var(--ink-soft);
+  }
+  .plan-summary b{color:var(--ink); font-family:'Space Grotesk';}
+
+  .note-line{font-size:14px; color:var(--ink-soft); margin-top:14px;}
+
+  /* ---------- Tip box ---------- */
+  .tip-box{
+    background:var(--surface-alt); border-left:4px solid var(--gold); border-radius:12px;
+    padding:16px 20px; margin-top:18px; display:flex; flex-direction:column; gap:6px;
+  }
+  .tip-box .tip-label{
+    font-family:'JetBrains Mono'; font-size:11px; font-weight:700; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--coral-ink); width:fit-content;
+  }
+  .tip-box p{margin:0; font-size:14.5px; color:var(--ink-soft);}
+
+  /* ---------- Link callout ---------- */
+  .callout{
+    background:var(--surface); border:1px dashed var(--teal); border-radius:var(--radius);
+    padding:18px 20px; display:flex; justify-content:space-between; gap:16px; align-items:center;
+    flex-wrap:wrap; margin-top:16px;
+  }
+  .callout p{margin:0; font-size:14.5px; color:var(--ink-soft); max-width:46ch;}
+  .callout a.arrow{font-family:'Space Grotesk'; font-weight:600; text-decoration:none; white-space:nowrap;}
+
+  footer{padding:30px 0 50px; text-align:center;}
+  footer p{font-size:13px; color:var(--ink-soft); max-width:52ch; margin:0 auto;}
+
+  @media (min-width:720px){
+    .hero{padding:64px 0 48px;}
+  }
+  @media (max-width:560px){
+    .week-grid{grid-template-columns:repeat(7,1fr); gap:5px; padding:10px;}
+    .day-cell{padding:10px 2px;}
+    .day-cell .day-name{font-size:9.5px; margin-bottom:5px;}
+    .day-cell .day-status{font-size:10px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap eyebrow-nav">
+    <span class="dot"></span> Home Fitness for Beginners
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <div class="hero wrap">
+    <div class="eyebrow">Beginner Fitness · Weekly Schedule</div>
+    <h1>Beginner Workout Schedule for Home: A Realistic Weekly Plan</h1>
+    <p class="lede">How many days a week to train, how long each session should be, and a sample weekly schedule you can actually stick to — including what to do the day you miss one.</p>
+
+    <div class="checklist">
+      <h2 class="mini">What this schedule assumes</h2>
+      <ul>
+        <li><span class="box"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8.5L6 12.5L14 3.5" stroke="#1F6F5C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span> You've tried the beginner routine at least once</li>
+        <li><span class="box"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8.5L6 12.5L14 3.5" stroke="#1F6F5C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span> 20–30 minutes free on training days</li>
+        <li><span class="box"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8.5L6 12.5L14 3.5" stroke="#1F6F5C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Okay with skipping a day, guilt-free</li>
+      </ul>
+    </div>
+
+    <div class="cta-row">
+      <a href="#schedule" class="btn btn-primary">See the weekly schedule ↓</a>
+      <a href="#missed-day" class="btn btn-ghost">Missed a day?</a>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat"><b>2–3</b><span>Days a week to start</span></div>
+      <div class="stat"><b>20–30 min</b><span>Per session</span></div>
+      <div class="stat"><b>0</b><span>Guilt if you miss a day</span></div>
+    </div>
+  </div>
+
+  <!-- HOW MANY DAYS -->
+  <section id="how-many">
+    <div class="wrap">
+      <h2>How Many Days a Week Should a Beginner Work Out?</h2>
+      <p>Most beginners are told to train three or four days a week right away. In practice, the number that actually works for someone starting from zero is two. Two sessions a week is enough to build real strength and a habit that survives a busy week, without the schedule guilt that makes so many people quit inside their first 30 days. Once two sessions start to feel easy rather than effortful, that's your cue to add a third — not before.</p>
+   <img src="images/workout schedule.jpg" alt="Workout Schedule for Beginners">
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule">
+    <div class="wrap">
+      <h2>Sample Weekly Schedule (2-Day and 3-Day Options)</h2>
+      <p>Pick whichever fits your week better — both are laid out below. Switch between them any time; there's no wrong choice, only the one you'll actually repeat.</p>
+
+      <div class="plan-toggle">
+        <button class="plan-btn active" data-plan="2" type="button">2 Days a Week</button>
+        <button class="plan-btn" data-plan="3" type="button">3 Days a Week</button>
+      </div>
+
+      <div class="week-grid" id="weekGrid">
+        <div class="day-cell" data-two="workout" data-three="workout"><span class="day-name">Mon</span><span class="day-status">—</span></div>
+        <div class="day-cell" data-two="rest" data-three="rest"><span class="day-name">Tue</span><span class="day-status">—</span></div>
+        <div class="day-cell" data-two="rest" data-three="workout"><span class="day-name">Wed</span><span class="day-status">—</span></div>
+        <div class="day-cell" data-two="workout" data-three="rest"><span class="day-name">Thu</span><span class="day-status">—</span></div>
+        <div class="day-cell" data-two="rest" data-three="workout"><span class="day-name">Fri</span><span class="day-status">—</span></div>
+        <div class="day-cell" data-two="rest" data-three="rest"><span class="day-name">Sat</span><span class="day-status">—</span></div>
+        <div class="day-cell" data-two="rest" data-three="rest"><span class="day-name">Sun</span><span class="day-status">—</span></div>
+      </div>
+
+      <div class="plan-summary">
+        <span><b id="summaryCount">2</b> sessions this week</span>
+        <span><b>20–30 min</b> each</span>
+      </div>
+
+      <p class="note-line">No printer needed — this page is laid out simply enough to screenshot or bookmark as your no-equipment workout plan.</p>
+
+      <div class="callout">
+        <p>Not sure what to actually do on a workout day? Every scheduled session uses this exact routine:</p>
+        <a class="arrow" href="beginner-bodyweight-workout-at-home.html">Beginner Bodyweight Workout at Home →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SESSION LENGTH -->
+  <section id="length">
+    <div class="wrap">
+      <h2>How Long Should Each Session Be?</h2>
+      <p>20 to 30 minutes is the sweet spot for a beginner session — long enough to include a proper warm-up, a main circuit, and a cooldown, short enough that it never eats your whole evening. If a session is running past 30 minutes, it's usually a sign to trim rest time between rounds, not to cut the warm-up or cooldown.</p>
+    </div>
+  </section>
+
+  <!-- MISSED DAY -->
+  <section id="missed-day">
+    <div class="wrap">
+      <h2>What to Do If You Miss a Day</h2>
+      <p>Missing a day is not a failed week — it's just a missed day. The instinct to "make up" a missed session by doing two workouts back-to-back is exactly what leads to burnout and quitting. If you miss Monday, the simplest fix is to do nothing about it: pick the schedule back up on your next planned day, even if that means a longer gap than usual. Consistency measured over months matters far more than any single missed day.</p>
+
+      <div class="tip-box">
+        <span class="tip-label">Tip</span>
+        <p>On rest days — or any day you end up skipping — aim for <b>8,000–10,000 steps </b>instead of sitting still. A 30–40 minute walk keeps blood flowing to sore muscles, burns a bit of extra energy without adding training stress, and keeps the day-to-day movement habit alive even when the structured workout doesn't happen.</p>
+     <img src="images/walking on rest days.jpg" alt="a women walking on Rest Days">
+      </div>
+    </div>
+  </section>
+
+  <!-- 4TH DAY -->
+  <section id="fourth-day">
+    <div class="wrap">
+      <h2>When to Add a 4th Day</h2>
+      <p>You're ready for a 4th day once your current schedule stops feeling like an effort — when you finish a session and could comfortably do a bit more. That's usually somewhere between week 4 and week 8, not during your first 30 days. A 4th day is also a natural point to introduce a little resistance instead of adding more bodyweight volume.</p>
+      <div class="callout">
+        <p>Thinking about what to add on that 4th day?</p>
+        <a class="arrow" href="best-home-workout-equipment-beginners-india.html">Best Home Workout Equipment for Beginners in India →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>General fitness guidance, not medical advice. Check with a doctor before starting a new exercise routine if you have any health conditions or concerns.</p>
+  <br>
+  <p><a href="#top"
+      style="text-decoration: none; border: 1px solid var(--coral); border-radius: 5px; padding: 5px 10px; background-color: var(--coral); color: var(--bg);">Back
+      to top</a></p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var buttons = document.querySelectorAll('.plan-btn');
+    var cells = document.querySelectorAll('.day-cell');
+    var summaryCount = document.getElementById('summaryCount');
+
+    function applyPlan(plan){
+      var count = 0;
+      cells.forEach(function(cell){
+        var status = plan === '2' ? cell.getAttribute('data-two') : cell.getAttribute('data-three');
+        var label = cell.querySelector('.day-status');
+        var isWorkout = status === 'workout';
+        cell.classList.toggle('is-workout', isWorkout);
+        label.textContent = isWorkout ? 'Workout' : 'Rest';
+        if(isWorkout) count++;
+      });
+      summaryCount.textContent = count;
+    }
+
+    buttons.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        buttons.forEach(function(b){ b.classList.remove('active'); });
+        btn.classList.add('active');
+        applyPlan(btn.getAttribute('data-plan'));
+      });
+    });
+
+    applyPlan('2');
+  })();
+</script>
+
+</body>
+</html>
