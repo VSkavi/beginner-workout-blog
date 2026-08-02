@@ -22,6 +22,8 @@
 
 *{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
+html, body{ overflow-x: hidden; width: 100%; }
+img{ max-width: 100%; height: auto; display: block; }
 
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior: auto; }
@@ -42,6 +44,9 @@ body{
   max-width: var(--wrap);
   margin: 0 auto;
   padding: 0 24px;
+}
+@media (max-width: 600px){
+  .wrap{ padding: 0 18px; }
 }
 
 h1, h2, h3{
@@ -225,8 +230,17 @@ a{ color: inherit; }
 }
 
 @media (max-width: 860px){
-  .hero-grid{ grid-template-columns: 1fr; }
+  .hero-grid{ grid-template-columns: 1fr; gap: 32px; }
   .hero-visual{ order: -1; }
+}
+
+@media (max-width: 600px){
+  .hero{ padding: 40px 0 32px; }
+  .hero-actions{ flex-direction: column; align-items: stretch; margin: 22px 0 28px; }
+  .hero-actions .btn{ width: 100%; justify-content: center; text-align: center; }
+  .stat-row{ gap: 20px; flex-wrap: wrap; padding-top: 18px; }
+  .stat-row dt{ font-size: 1.25rem; }
+  .floor-square{ width: min(280px, 100%); }
 }
 
 /* ============================================
@@ -239,6 +253,10 @@ a{ color: inherit; }
   border-radius: var(--radius);
   padding: 26px 30px;
   display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap;
+}
+@media (max-width: 600px){
+  .tldr{ padding: 0 0 40px; }
+  .tldr-card{ padding: 20px; gap: 12px; }
 }
 .tldr-card p{ color: #DCE0D6; margin: 0; flex: 1; min-width: 240px; }
 .tldr-tag{
@@ -274,7 +292,8 @@ a{ color: inherit; }
   position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
   width: 8px; height: 8px; background: var(--coral); border-radius: 2px;
 }
-@media (max-width: 780px){ .why-grid{ grid-template-columns: 1fr; } }
+@media (max-width: 780px){ .why-grid{ grid-template-columns: 1fr; gap: 28px; } }
+@media (max-width: 600px){ .why{ padding: 28px 0 44px; } }
 
 /* ============================================
    ROUTINE PREVIEW
@@ -303,6 +322,10 @@ a{ color: inherit; }
 }
 .phase-card p{ font-size: 0.92rem; margin: 0; }
 @media (max-width: 780px){ .phase-track{ grid-template-columns: 1fr; } }
+@media (max-width: 600px){
+  .routine-preview{ padding: 28px 0 48px; }
+  .phase-track{ margin: 24px 0 26px; gap: 14px; }
+}
 
 /* ============================================
    PROOF
@@ -322,7 +345,12 @@ blockquote p::after{ content: "”"; }
 blockquote p{ color: var(--ink); }
 cite{ display: block; margin-top: 12px; font-style: normal; font-size: 0.85rem; color: var(--ink-soft); }
 .proof-note p{ font-size: 0.92rem; }
-@media (max-width: 780px){ .proof-grid{ grid-template-columns: 1fr; } }
+@media (max-width: 780px){ .proof-grid{ grid-template-columns: 1fr; gap: 24px; } }
+@media (max-width: 600px){
+  .proof{ padding: 0 0 48px; }
+  .proof-grid{ padding-top: 28px; }
+  blockquote{ font-size: 1.08rem; }
+}
 
 /* ============================================
    FAQ ACCORDION
@@ -353,6 +381,11 @@ cite{ display: block; margin-top: 12px; font-style: normal; font-size: 0.85rem; 
 }
 .acc-panel p{ padding: 0 4px 20px; margin: 0; font-size: 0.95rem; }
 
+@media (max-width: 600px){
+  .faq-preview{ padding: 0 0 48px; }
+  .acc-trigger{ font-size: 0.95rem; padding: 16px 2px; gap: 12px; }
+}
+
 /* ============================================
    AUTHOR
    ============================================ */
@@ -372,7 +405,10 @@ cite{ display: block; margin-top: 12px; font-style: normal; font-size: 0.85rem; 
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-display); font-weight: 700;
 }
-@media (max-width: 600px){ .author-card{ flex-direction: column; } }
+@media (max-width: 600px){
+  .author{ padding: 0 0 56px; }
+  .author-card{ flex-direction: column; padding: 24px; }
+}
 
 /* ============================================
    FOOTER
@@ -390,7 +426,11 @@ cite{ display: block; margin-top: 12px; font-style: normal; font-size: 0.85rem; 
 .footer-grid nav a, .social a{ text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; }
 .footer-grid nav a:hover, .social a:hover{ color: var(--coral-ink); }
 .social{ display: flex; flex-direction: column; gap: 8px; }
-@media (max-width: 700px){ .footer-grid{ grid-template-columns: 1fr; } }
+@media (max-width: 700px){ .footer-grid{ grid-template-columns: 1fr; gap: 24px; } }
+@media (max-width: 600px){
+  .site-footer{ padding: 32px 0; }
+  .footer-grid nav{ flex-direction: row; flex-wrap: wrap; gap: 16px; }
+}
 
 /* ============================================
    SCROLL REVEAL
